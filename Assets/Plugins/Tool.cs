@@ -308,12 +308,12 @@ public class Tools
         // 判断是否成功
         if (process.ExitCode == 0)
         {
-            UnityEngine.Debug.Log("执行成功");
+            UnityEngine.Debug.Log(command+"执行成功");
             UnityEngine.Debug.Log("Output: " + output);
         }
         else
         {
-            UnityEngine.Debug.Log("执行失败");
+            UnityEngine.Debug.Log(command +"执行失败");
             UnityEngine.Debug.Log("Error: " + error);
         }
     }
