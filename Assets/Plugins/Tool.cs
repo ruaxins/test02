@@ -44,10 +44,6 @@ public class Tools
         {
             Console.WriteLine("An error occurred: " + ex.Message);
         }
-        UnityEngine.Debug.Log(Value.Instance.Token);
-        UnityEngine.Debug.Log(Value.Instance.Username);
-        UnityEngine.Debug.Log(Value.Instance.Reponame);
-        UnityEngine.Debug.Log(Value.Instance.Path);
 
         System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
         token = Value.Instance.Token; // 你的GitHub个人访问令牌
