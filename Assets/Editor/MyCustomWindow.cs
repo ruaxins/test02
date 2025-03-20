@@ -14,7 +14,7 @@ public class MyCustomWindow : EditorWindow
     string merged_branchName;
     string merge_body;
     string load_branchName;
-
+    string load_path;
 
     // 定义一个菜单项，用于打开窗口
     [MenuItem("Tools/Git")]
@@ -109,7 +109,6 @@ public class MyCustomWindow : EditorWindow
                 {
                     //更新分支
                     tools.CommitChanges(updatemessage);
-                    UnityEngine.Debug.Log("更新成功");
                 }
                 catch
                 {
@@ -150,7 +149,8 @@ public class MyCustomWindow : EditorWindow
         }
 
         GUILayout.Label("\n导入分支", EditorStyles.boldLabel);
-        load_branchName = EditorGUILayout.TextField("合并分支名称:", load_branchName);
+        load_branchName = EditorGUILayout.TextField("导入分支名称:", load_branchName);
+        load_path = EditorGUILayout.TextField("导入到的空文件夹路径::", load_path);
         if (GUILayout.Button("导入"))
         {
             if (!string.IsNullOrEmpty(load_branchName))
@@ -165,8 +165,7 @@ public class MyCustomWindow : EditorWindow
                 try
                 {
                     //导入分支
-                    tools.DownloadBranch(load_branchName);
-                    UnityEngine.Debug.Log("导入成功");
+                    tools.DownloadBranch(load_branchName, load_path);
                 }
                 catch
                 {

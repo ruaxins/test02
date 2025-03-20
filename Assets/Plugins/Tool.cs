@@ -19,7 +19,6 @@ public class Tools
     private string repoName;
     private string repoPath;
     private string repoUrl;
-    private string downloadPath;
 
     public Tools()
     {
@@ -51,7 +50,6 @@ public class Tools
         repoName = Value.Instance.Reponame; // 你的GitHub仓库名
         repoPath = Value.Instance.Path;
         repoUrl = "https://github.com/{repoOwner}/{repoName}.git";
-        downloadPath = Value.Instance.Path;
     }
 
 
@@ -268,7 +266,7 @@ public class Tools
         RunGitCommand("push origin " + GetBranch());
     }
     //获取分支
-    public void DownloadBranch(string branchName)
+    public void DownloadBranch(string branchName, string downloadPath)
     {
         // 确保下载路径存在
         if (!Directory.Exists(downloadPath))
