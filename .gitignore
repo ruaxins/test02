@@ -1,0 +1,45 @@
+# 忽略操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 忽略编辑器生成的文件
+.idea/
+.vscode/
+*.suo
+*.user
+*.sln
+.vs/
+
+# 忽略日志文件
+*.log
+
+# 忽略编译生成的文件
+bin/
+obj/
+build/
+dist/
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.out
+
+# 忽略 Unity 生成的文件
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Mm]emoryCaptures/
+
+# 忽略 Unity 项目设置
+/ProjectSettings/ProjectVersion.txt
+/ProjectSettings/EditorBuildSettings.asset
+
+# 忽略自动生成的文件夹
+/[Aa]ssets/AssetStoreTools*
+
+# 隐私文件
+Assets/StreamingAssets/token.txt
