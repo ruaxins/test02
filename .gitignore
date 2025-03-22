@@ -38,8 +38,6 @@ dist/
 /ProjectSettings/ProjectVersion.txt
 /ProjectSettings/EditorBuildSettings.asset
 
-# 忽略自动生成的文件夹
-/[Aa]ssets/AssetStoreTools*
 
 # 隐私文件
 Assets/StreamingAssets/token.txt
