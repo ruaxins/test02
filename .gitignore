@@ -37,3 +37,6 @@ dist/
 # 忽略 Unity 项目设置
 /ProjectSettings/ProjectVersion.txt
 /ProjectSettings/EditorBuildSettings.asset
+
+/Assets/StreamingAssets/token.txt
+token.txt
